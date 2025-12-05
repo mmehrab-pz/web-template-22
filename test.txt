@@ -1,0 +1,11 @@
+    content: "";
+    position: absolute;
+    top: -90px;
+    left: 0;
+    height: 178px;
+    width: 178px;
+    border-radius: 50%;
+    opacity: 0.6;
+    background: linear-gradient(93deg, #B324D7 7.07%, #FE577F 97.81%);
+    filter: blur(114px);
+    z-index: -1;
