@@ -7,21 +7,15 @@ import { usePathname } from "next/navigation";
 import Logo from "../../../public/images/logo.png";
 
 export default function Header() {
-  // const [active, setActive] = useState("home");
-
-  // const liActive = (name) => {
-  //   setActive(name);
-  // };
-
-   const pathname = usePathname();
+  const pathname = usePathname();
 
   const menuItems = [
-    {name: 'home', path:'/'},
-    {name: 'about', path:'/about'},
-    {name: 'pages', path:'/pages'},
-    {name: 'blog', path:'/blog'},
-    {name: 'contact', path:'/contact'},
-    {name: 'mehrab', path:'/mehrab'}
+    { name: "home", path: "/" },
+    { name: "about", path: "/about" },
+    { name: "pages", path: "/pages" },
+    { name: "blog", path: "/blog" },
+    { name: "contact", path: "/contact" },
+    { name: "mehrab", path: "/mehrab" },
   ];
   return (
     <header className="w-full h-[90px] px-[165px] flex justify-between">
@@ -34,7 +28,6 @@ export default function Header() {
             return (
               <li
                 key={item.name}
-                
                 className={`className="text-[14px] capitalize duration-300 cursor-pointer font-sora font-medium ml-[45px] ${
                   pathname === item.path
                     ? "text-white"
