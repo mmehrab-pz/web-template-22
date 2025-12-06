@@ -1,17 +1,28 @@
 "use client";
 import React from "react";
 import { useState } from "react";
+import Link from "next/link";
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import Logo from "../../../public/images/logo.png";
 
 export default function Header() {
-  const [active, setActive] = useState("home");
+  // const [active, setActive] = useState("home");
 
-  const liActive = (name) => {
-    setActive(name);
-  };
+  // const liActive = (name) => {
+  //   setActive(name);
+  // };
 
-  const menuItems = ["home", "about", "pages", "blog", "contact", "mehrab"];
+   const pathname = usePathname();
+
+  const menuItems = [
+    {name: 'home', path:'/'},
+    {name: 'about', path:'/about'},
+    {name: 'pages', path:'/pages'},
+    {name: 'blog', path:'/blog'},
+    {name: 'contact', path:'/contact'},
+    {name: 'mehrab', path:'/mehrab'}
+  ];
   return (
     <header className="w-full h-[90px] px-[165px] flex justify-between">
       <figure className="h-full flex items-center">
@@ -22,15 +33,15 @@ export default function Header() {
           {menuItems.map((item) => {
             return (
               <li
-                key={item}
-                onClick={() => liActive(item)}
+                key={item.name}
+                
                 className={`className="text-[14px] capitalize duration-300 cursor-pointer font-sora font-medium ml-[45px] ${
-                  active === item
+                  pathname === item.path
                     ? "text-white"
                     : "text-[#a1aac9] hover:text-white"
                 }`}
               >
-                {item}
+                <Link href={item.path}>{item.name}</Link>
               </li>
             );
           })}
