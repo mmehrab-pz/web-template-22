@@ -1,23 +1,49 @@
+"use client";
 import React from "react";
+import { useState } from "react";
 import Image from "next/image";
-import Logo from "../../../public/images/logo.png"
+import Logo from "../../../public/images/logo.png";
 
 export default function Header() {
+  const [active, setActive] = useState("home");
+
+  const liActive = (name) => {
+    setActive(name);
+  };
+
+  const menuItems = ["home", "about", "pages", "blog", "contact", "mehrab"];
   return (
-    <header className="w-full h-[90px] bt px-[165px] flex justify-between">
-      <figure className="h-full bt flex items-center">
+    <header className="w-full h-[90px] px-[165px] flex justify-between">
+      <figure className="h-full flex items-center">
         <Image src={Logo} alt="asd" />
       </figure>
-      <nav className="h-full bt">
-        <ul className="h-full flex items-center gap-2.5 ">
-            <li className="text-[14px] capitalize text-white font-sora font-medium">home</li>
-            <li className="text-[14px] capitalize text-white font-sora">about</li>
-            <li className="text-[14px] capitalize text-white font-sora">pages</li>
-            <li className="text-[14px] capitalize text-white font-sora">blog</li>
-            <li className="text-[14px] capitalize text-white font-sora">contact</li>
-            <li className="text-[14px] capitalize text-white font-sora">mehrab</li>
+      <nav className="h-full">
+        <ul className="h-full flex items-center">
+          {menuItems.map((item) => {
+            return (
+              <li
+                key={item}
+                onClick={() => liActive(item)}
+                className={`className="text-[14px] capitalize duration-300 cursor-pointer font-sora font-medium ml-[45px] ${
+                  active === item
+                    ? "text-white"
+                    : "text-[#a1aac9] hover:text-white"
+                }`}
+              >
+                {item}
+              </li>
+            );
+          })}
         </ul>
       </nav>
+      <div className="h-full flex items-center">
+        <button className="py-1.5 px-[25px] text-[#a1aac9] font-sora font-medium capitalize border border-[#ffffff00] rounded-lg hover:text-[#FF6C1E] hover:border-[#FF6C1E] duration-300 cursor-pointer">
+          login
+        </button>
+        <button className="py-1.5 px-[25px] text-[#a1aac9] font-sora font-medium capitalize border border-[#ffffff00] rounded-lg hover:text-[#FF6C1E] hover:border-[#FF6C1E] duration-300 cursor-pointer">
+          sign up
+        </button>
+      </div>
     </header>
   );
 }
