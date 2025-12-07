@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../components/layout/Header";
 import HomeHeaderContent from "@/components/layout/HomeHeaderContent";
 import AiPlatform from "@/components/layout/AiPlatform";
+import AiSulotions from "@/components/layout/AiSulotions";
 
 export default function page() {
   return (
@@ -9,6 +10,7 @@ export default function page() {
       <Header />
       <HomeHeaderContent />
       <AiPlatform />
+      <AiSulotions />
     </>
   );
 }

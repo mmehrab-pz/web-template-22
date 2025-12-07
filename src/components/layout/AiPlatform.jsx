@@ -11,7 +11,7 @@ import pack6 from "@/../public/images/pack6.png";
 
 export default function AiPlatform() {
   return (
-    <section className='w-full  mt-[120px]'>
+    <section className='w-full flex flex-col items-center mt-[120px]'>
         <MiniTitle txt='all ai platform' />
         <TitleTwo first='all possible Generative ai solutions at one place' highlight='' last='' />
         <div className=' w-full mt-5 flex justify-center gap-5 flex-wrap px-5'>
