@@ -21,7 +21,7 @@ export default function HomeHeaderContent() {
       </h1>
       <Button1 title="get started free" />
       {/* ----------------- */}
-      <div className="mt-[35px] flex gap-[250px] mx-auto">
+      <div className="mt-[35px] flex flex-col md:flex-row gap-3 md:gap-[250px] mx-auto mb-3">
         <div className="w-[140px] h-[140px] bg-[#ffffff0d] border border-[#ffffff29] backdrop-blur-[10px] rounded-2xl flex flex-col justify-center items-center">
           <Image src={pack1} alt="img" />
           <h2 className="text-[18px] text-[white] font-sora font-medium capitalize mt-3 text-center">
@@ -36,7 +36,7 @@ export default function HomeHeaderContent() {
         </div>
       </div>
       {/* ----------------- */}
-      <div className="w-[860px] flex justify-between items-center">
+      <div className="w-[860px] flex flex-col md:flex-row gap-3 justify-between items-center">
         <div className="w-[140px] h-[140px] bg-[#ffffff0d] relative border border-[#ffffff29] backdrop-blur-[10px] rounded-2xl flex flex-col justify-center items-center">
           <Image src={pack3} alt="img" />
           <h2 className="text-[18px] text-[white] font-sora font-medium capitalize mt-3 text-center">
@@ -69,14 +69,14 @@ export default function HomeHeaderContent() {
         </div>
       </div>
       {/* ----------------- */}
-      <div className="flex items-center gap-[250px] mx-auto relative">
+      <div className="flex items-center flex-col md:flex-row gap-3 md:gap-[250px] mx-auto relative mt-3">
         <div className="w-[140px] h-[140px] bg-[#ffffff0d] border border-[#ffffff29] backdrop-blur-[10px] rounded-2xl flex flex-col justify-center items-center">
           <Image src={pack5} alt="img" />
           <h2 className="text-[18px] text-[white] font-sora font-medium capitalize mt-3 text-center">
             generate text to audio
           </h2>
         </div>
-        <h2 className="font-sora text-[#426BFF] capitalize font-bold text-[30px] absolute left-[50%] translate-x-[-50%]">
+        <h2 className="font-sora text-[#426BFF] hidden capitalize font-bold text-[30px] absolute left-[50%] translate-x-[-50%]">
           ai pack
         </h2>
         <div className="w-[140px] h-[140px] bg-[#ffffff0d] border border-[#ffffff29] backdrop-blur-[10px] rounded-2xl flex flex-col justify-center items-center">
@@ -86,7 +86,7 @@ export default function HomeHeaderContent() {
           </h2>
         </div>
       </div>
-      <div className={"mt-[120px] flex gap-10"}>
+      <div className={"mt-[120px] w-full flex justify-start md:w-auto flex-col md:flex-row gap-10 pl-5"}>
         {/* -------------------- */}
         <div className={"flex items-center"}>
           <figure>

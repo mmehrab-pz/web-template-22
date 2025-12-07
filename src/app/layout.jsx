@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${soraFont.variable} antialiased`}
       >
-        <main className="bg-[#111022] w-full h-[500vh]">
+        <main className="bg-[#111022] w-full h-[500vh] overflow-x-hidden">
           {children}
         </main>
       </body>
