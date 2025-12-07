@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import Logo from "../../../public/images/logo.png";
+import { IoMenu } from "react-icons/io5";
 
 export default function Header() {
   const pathname = usePathname();
@@ -18,11 +19,11 @@ export default function Header() {
     { name: "mehrab", path: "/mehrab" },
   ];
   return (
-    <header className="w-full h-[90px] px-[165px] flex justify-between">
-      <figure className="h-full flex items-center">
+    <header className="w-full h-[90px] px-3 lg:px-[165px] flex justify-between">
+      <figure className="w-1/2 xl:w-auto h-full flex items-center">
         <Image src={Logo} alt="asd" />
       </figure>
-      <nav className="h-full">
+      <nav className="hidden xl:inline h-full">
         <ul className="h-full flex items-center">
           {menuItems.map((item) => {
             return (
@@ -40,13 +41,17 @@ export default function Header() {
           })}
         </ul>
       </nav>
-      <div className="h-full flex items-center">
+      <div className="hidden h-full md:flex items-center">
         <button className="py-1.5 px-[25px] text-[#a1aac9] font-sora font-medium capitalize border border-[#ffffff00] rounded-lg hover:text-[#FF6C1E] hover:border-[#FF6C1E] duration-300 cursor-pointer">
           login
         </button>
         <button className="py-1.5 px-[25px] text-[#a1aac9] font-sora font-medium capitalize border border-[#ffffff00] rounded-lg hover:text-[#FF6C1E] hover:border-[#FF6C1E] duration-300 cursor-pointer">
           sign up
         </button>
+      </div>
+      {/* ---------menu mobile--------- */}
+      <div className="w-1/2 md:w-auto xl:hidden h-full flex items-center justify-end">
+          <IoMenu className="text-[white] text-[28px] cursor-pointer" />
       </div>
     </header>
   );
