@@ -34,9 +34,9 @@ export default function AiSulotions() {
       />
       <div className="w-full xl:w-[1320px] px-5 xl:px-0 mt-10">
         {/* -------------box 1-------------- */}
-        <div className="w-full border border-[#3C3C77] relative bg-[#12122B] flex rounded-2xl py-[45px] pl-[70px] pr-[37px] mb-6 duration-300 hover:border-[#ACDA49]">
+        <div className="w-full border border-[#3C3C77] relative bg-[#12122B] flex flex-col lg:flex-row rounded-2xl p-5 lg:py-[45px] lg:pl-[70px] lg:pr-[37px] mb-6 duration-300 hover:border-[#ACDA49]">
           <span className="w-full h-full absolute bg-[url('/images/bg1.png')] top-0 left-0 z-1"></span>
-          <div className="w-1/2 relative z-2 flex flex-col justify-start items-start">
+          <div className="w-full lg:w-1/2 relative z-2 flex flex-col justify-start items-start">
             <MiniTitle txt="AI Writing Tools" />
             <TitleThree title="Write ✍️ Better Content Faster, The Future of AI Writing Tools is Finally here" />
             <p className="font-sora text-[#a1aac9] leading-[26px] mt-3.5">
@@ -57,17 +57,17 @@ export default function AiSulotions() {
                 Choose the best AI copy for your message & save as a document
               </li>
             </ul>
-            <Button1 title="get started" />
+            <Button1 title="get started"/>
           </div>
-          <div className="w-1/2 relative z-2">
-            <figure className="w-full h-full rounded-2xl border border-[#3C3C77] bg-[#1E1E42] p-[25px]">
-              <Image src={template1} alt="template1" className="rounded-2xl" />
+          <div className="w-full lg:w-1/2 relative z-2 mt-5 lg:mt-0">
+            <figure className="w-full h-fit rounded-2xl border border-[#3C3C77] bg-[#1E1E42] p-[25px]">
+              <Image src={template1} alt="template1" className="rounded-2xl w-full" />
             </figure>
           </div>
         </div>
         {/* -------------box 2 and 3-------------- */}
-        <div className="w-full flex gap-6">
-          <div className="w-1/2 h-full px-10 pt-12 pb-10 border border-[#3C3C77] text-center relative bg-[#15152E] rounded-2xl duration-300 hover:border-[#ACDA49] flex flex-col items-center">
+        <div className="w-full flex flex-col lg:flex-row gap-6">
+          <div className="w-full lg:w-1/2 h-full lg:min-h-[690px] p-5 lg:px-10 lg:pt-12 lg:pb-10 border border-[#3C3C77] text-center relative bg-[#15152E] rounded-2xl duration-300 hover:border-[#ACDA49] flex flex-col items-center">
             <MiniTitle txt="ai chat bot" />
             <TitleThree title="With FlowAI, you can chat 🤖 smarter, not harder." />
             <p className="font-sora text-[#a1aac9] leading-[26px] my-3.5">
@@ -85,12 +85,12 @@ export default function AiSulotions() {
               <Image
                 src={template2}
                 alt="template2"
-                className="rounded-lg relative z-2"
+                className="rounded-lg relative z-2 w-full"
               />
               <span className="absolute w-[560px] h-[80%] bg-[linear-gradient(103deg,#00E3F2_8.08%,#0000F2_31.54%,#F87D7D_60.38%,#FF2828_89.73%)] blur-[50px] opacity-[0.35] top-[50px] left-0 rotate-155 z-1"></span>
             </figure>
           </div>
-          <div className="w-1/2 h-full px-10 pt-12 pb-10 border border-[#3C3C77] text-center relative bg-[#15152E] rounded-2xl duration-300 hover:border-[#ACDA49] flex flex-col items-center">
+          <div className="w-full lg:w-1/2 h-full lg:min-h-[690px] p-5 lg:px-10 lg:pt-12 lg:pb-10 border border-[#3C3C77] text-center relative bg-[#15152E] rounded-2xl duration-300 hover:border-[#ACDA49] flex flex-col items-center">
             <MiniTitle txt="ai video generator" />
             <TitleThree title="A wonderful video may be created by anyone." />
             <p className="font-sora text-[#a1aac9] leading-[26px] my-3.5">
@@ -108,16 +108,16 @@ export default function AiSulotions() {
               <Image
                 src={template3}
                 alt="template3"
-                className="rounded-lg relative z-2"
+                className="rounded-lg relative z-2 w-full"
               />
               <span className="absolute w-[560px] h-[80%] bg-[linear-gradient(103deg,#00E3F2_8.08%,#0000F2_31.54%,#F87D7D_60.38%,#FF2828_89.73%)] blur-[50px] opacity-[0.35] top-[50px] left-0 rotate-155 z-1"></span>
             </figure>
           </div>
         </div>
         {/* -------------box 4-------------- */}
-        <div className="w-full border border-[#3C3C77] mt-6 relative bg-[#15152E] z-3 flex rounded-2xl pt-16 pb-[82px] pl-[50px] pr-[60px] mb-6 duration-300 hover:border-[#ACDA49]">
+        <div className="w-full border border-[#3C3C77] mt-6 relative bg-[#15152E] z-3 flex rounded-2xl p-5 lg:pt-16 lg:pb-[82px] lg:pl-[50px] lg:pr-[60px] mb-6 duration-300 hover:border-[#ACDA49]">
           <span className="w-full h-full absolute bg-[url('/images/bg1.png')] top-0 left-0 z-1"></span>
-          <div className="w-1/2 relative z-2 flex justify-end">
+          <div className="w-1/2 relative hidden z-2 lg:flex justify-end">
             <div className="w-[530px] h-[435px] pl-4 pt-4 border border-[#4B4B70] relative rounded-2xl bg-[linear-gradient(180deg,rgba(23,24,37,0.85)_0%,rgba(23,24,37,0.00)_101.72%)]">
               <Image src={dots} alt="dots" />
               <span className="w-[440px] h-[350px] flex blur-[50px] absolute rotate-150 bg-[linear-gradient(103deg,#00E3F2_8.08%,#0000F2_31.54%,#F87D7D_60.38%,#FF2828_89.73%)] opacity-[0.35] top-10"></span>
@@ -143,7 +143,7 @@ export default function AiSulotions() {
               </div>
             </div>
           </div>
-          <div className="w-1/2 relative z-2 flex flex-col justify-start items-start pl-[58px]">
+          <div className="w-full lg:w-1/2 relative z-2 flex flex-col justify-start items-start lg:pl-[58px]">
             <MiniTitle txt="AI Writing Tools" />
             <TitleThree title="Generate Outstanding AI Images Just Using Prompt 🌄" />
             <p className="font-sora text-[#a1aac9] leading-[26px] mt-3.5">
