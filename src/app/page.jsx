@@ -4,6 +4,7 @@ import HomeHeaderContent from "@/components/layout/HomeHeaderContent";
 import AiPlatform from "@/components/layout/AiPlatform";
 import AiSulotions from "@/components/layout/AiSulotions";
 import TrustedTeams from "@/components/layout/TrustedTeams";
+import Streamlining from "@/components/layout/Streamlining";
 
 export default function page() {
   return (
@@ -13,6 +14,7 @@ export default function page() {
       <AiPlatform />
       <AiSulotions />
       <TrustedTeams />
+      <Streamlining />
     </>
   );
 }
