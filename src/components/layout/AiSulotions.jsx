@@ -23,6 +23,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { LuArrowUpRight } from "react-icons/lu";
 import { FaCheck } from "react-icons/fa6";
+import StarRotate from "../ui/stars/StarRotate";
 
 export default function AiSulotions() {
   return (
@@ -36,6 +37,9 @@ export default function AiSulotions() {
         {/* -------------box 1-------------- */}
         <div className="w-full border border-[#3C3C77] relative bg-[#12122B] flex flex-col lg:flex-row rounded-2xl p-5 lg:py-[45px] lg:pl-[70px] lg:pr-[37px] mb-6 duration-300 hover:border-[#ACDA49]">
           <span className="w-full h-full absolute bg-[url('/images/bg1.png')] top-0 left-0 z-1"></span>
+          <figure className="absolute bottom-23 left-130">
+            <StarRotate />
+          </figure>
           <div className="w-full lg:w-1/2 relative z-2 flex flex-col justify-start items-start">
             <MiniTitle txt="AI Writing Tools" />
             <TitleThree title="Write ✍️ Better Content Faster, The Future of AI Writing Tools is Finally here" />

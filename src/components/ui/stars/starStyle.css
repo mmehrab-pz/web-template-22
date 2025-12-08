@@ -1,0 +1,44 @@
+@keyframes StarLtr {
+    0% {
+        transform: translateX(-30px);
+    }
+
+    50% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        transform: translateX(-30px);
+    }
+}
+
+@keyframes StarRotate {
+    0% {
+    -webkit-transform: rotate(0deg) scale(0.7);
+    transform: rotate(0deg) scale(0.7);
+    opacity: 0;
+}
+
+50% {
+    -webkit-transform: rotate(180deg) scale(1);
+    transform: rotate(180deg) scale(1);
+    opacity: 1;
+}
+100% {
+    -webkit-transform: rotate(360deg) scale(0.7);
+    transform: rotate(360deg) scale(0.7);
+    opacity: 0;
+}
+}
+
+@keyframes StarUtd {
+    0% {
+    transform: translateY(-20px);
+}
+50% {
+    transform: translateY(-10px);
+}
+100% {
+    transform: translateY(-20px);
+}
+}

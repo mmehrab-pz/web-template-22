@@ -11,6 +11,9 @@ import greenStar from "@/../public/images/greenStar.png";
 import arrow from "@/../public/images/arrow.png";
 import Image from "next/image";
 import { TiStarFullOutline } from "react-icons/ti";
+import StarLtr from "./../ui/stars/StarLtr";
+import StarUtd from "./../ui/stars/StarUtd";
+import StarRotate from './../ui/stars/StarRotate';
 
 export default function HomeHeaderContent() {
   return (
@@ -36,7 +39,25 @@ export default function HomeHeaderContent() {
         </div>
       </div>
       {/* ----------------- */}
-      <div className="w-[860px] flex flex-col md:flex-row gap-3 justify-between items-center">
+      <div className="w-[860px] relative flex flex-col md:flex-row gap-3 justify-between items-center">
+        <figure className="absolute top-6 left-40">
+            <StarLtr />
+        </figure>
+        <figure className="absolute top-2 right-40">
+            <StarLtr />
+        </figure>
+        <figure className="absolute bottom-4 right-40">
+            <StarUtd />
+        </figure>
+        <figure className="absolute -bottom-2 left-40">
+            <StarUtd />
+        </figure>
+        <figure className="absolute top-1 left-0">
+            <StarRotate />
+        </figure>
+        <figure className="absolute top-2 -right-3">
+            <StarRotate />
+        </figure>
         <div className="w-[140px] h-[140px] bg-[#ffffff0d] relative border border-[#ffffff29] backdrop-blur-[10px] rounded-2xl flex flex-col justify-center items-center">
           <Image src={pack3} alt="img" />
           <h2 className="text-[18px] text-[white] font-sora font-medium capitalize mt-3 text-center">
@@ -70,6 +91,12 @@ export default function HomeHeaderContent() {
       </div>
       {/* ----------------- */}
       <div className="flex items-center flex-col md:flex-row gap-3 md:gap-[250px] mx-auto relative mt-3">
+        <figure className="absolute bottom-0 -right-60">
+            <StarLtr />
+        </figure>
+                <figure className="absolute -bottom-10 -left-50">
+            <StarRotate />
+        </figure>
         <div className="w-[140px] h-[140px] bg-[#ffffff0d] border border-[#ffffff29] backdrop-blur-[10px] rounded-2xl flex flex-col justify-center items-center">
           <Image src={pack5} alt="img" />
           <h2 className="text-[18px] text-[white] font-sora font-medium capitalize mt-3 text-center">
