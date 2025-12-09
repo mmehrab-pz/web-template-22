@@ -5,6 +5,7 @@ import AiPlatform from "@/components/layout/AiPlatform";
 import AiSulotions from "@/components/layout/AiSulotions";
 import TrustedTeams from "@/components/layout/TrustedTeams";
 import Streamlining from "@/components/layout/Streamlining";
+import CustomerStories from "@/components/layout/CustomerStories";
 
 export default function page() {
   return (
@@ -15,6 +16,7 @@ export default function page() {
       <AiSulotions />
       <TrustedTeams />
       <Streamlining />
+      <CustomerStories />
     </>
   );
 }
