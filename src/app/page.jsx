@@ -6,6 +6,7 @@ import AiSulotions from "@/components/layout/AiSulotions";
 import TrustedTeams from "@/components/layout/TrustedTeams";
 import Streamlining from "@/components/layout/Streamlining";
 import CustomerStories from "@/components/layout/CustomerStories";
+import Plans from "@/components/layout/Plans";
 
 export default function page() {
   return (
@@ -17,6 +18,7 @@ export default function page() {
       <TrustedTeams />
       <Streamlining />
       <CustomerStories />
+      <Plans />
     </>
   );
 }
