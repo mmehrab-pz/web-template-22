@@ -7,6 +7,7 @@ import TrustedTeams from "@/components/layout/TrustedTeams";
 import Streamlining from "@/components/layout/Streamlining";
 import CustomerStories from "@/components/layout/CustomerStories";
 import Plans from "@/components/layout/Plans";
+import FAQ from "@/components/layout/FAQ";
 
 export default function page() {
   return (
@@ -19,6 +20,7 @@ export default function page() {
       <Streamlining />
       <CustomerStories />
       <Plans />
+      <FAQ />
     </>
   );
 }

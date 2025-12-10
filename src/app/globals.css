@@ -28,6 +28,14 @@ body {
 @theme inline {
   --font-sora: var(--font-sora);
 }
+@layer components {
+  .accordion{
+    @apply w-full border border-[#3C3C77] bg-[#15152c] rounded-lg lg:w-[845px]
+  }
+  .accordion-title{
+    @apply font-sora font-medium text-[13px] lg:text-[20px] text-[#a1aac9] capitalize py-5 pl-[30px] pr-[35px] cursor-pointer flex justify-between items-center
+  }
+}
 
 @layer utilities{
   .bt{
