@@ -19,7 +19,8 @@ export default function Header() {
     { name: "mehrab", path: "/mehrab" },
   ];
   return (
-    <header className="w-full h-[90px] px-3 lg:px-[165px] flex justify-between">
+    <header className="w-full h-[90px] px-3 lg:px-[165px] flex justify-between relative">
+      <span className="absolute -top-20 -left-3 h-[180px] flex w-[180px] rounded-full opacity-[0.6] blur-[114px] bg-[linear-gradient(93deg,#B324D7_7.07%,#FE577F_97.81%)]"></span>
       <figure className="w-1/2 xl:w-auto h-full flex items-center">
         <Image src={Logo} alt="asd" />
       </figure>
