@@ -8,6 +8,7 @@ import FAQ from "@/components/layout/FAQ";
 import PageTitle from "@/components/layout/PageTitle";
 import Video from "@/components/layout/Video";
 import Create from "@/components/layout/Create";
+import OurTeam from "@/components/layout/about/OurTeam";
 
 
 export default function page() {
@@ -22,6 +23,7 @@ export default function page() {
       <Create />
       <TrustedTeams />
       <Video />
+      <OurTeam />
       <CustomerStories />
       <FAQ />
       <Footer />
