@@ -1,4 +1,3 @@
-"use client";
 import React from "react";
 import profile1 from "@/../public/images/profile1.jpg";
 import profile2 from "@/../public/images/profile2.jpg";
@@ -59,7 +58,7 @@ export default function OurTeam() {
   return (
     <section className={`w-full mb-[120px]`}>
       <h3
-        className={`w-full lg:w-[50%] mx-auto font-sora font-semibold text-[40px] text-white capitalize text-center`}
+        className={`w-full lg:w-[50%] mx-auto font-sora font-semibold text-[30px] lg:text-[40px] text-white capitalize text-center`}
       >
         Meet Our Dynamic Team Member, Who Are Really Care About
       </h3>

@@ -9,6 +9,7 @@ import PageTitle from "@/components/layout/PageTitle";
 import Video from "@/components/layout/Video";
 import Create from "@/components/layout/Create";
 import OurTeam from "@/components/layout/about/OurTeam";
+import AIPerformance from "@/components/layout/about/AIPerformance";
 
 
 export default function page() {
@@ -25,6 +26,7 @@ export default function page() {
       <Video />
       <OurTeam />
       <CustomerStories />
+      <AIPerformance />
       <FAQ />
       <Footer />
     </>
