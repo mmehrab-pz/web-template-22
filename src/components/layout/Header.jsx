@@ -13,7 +13,7 @@ export default function Header() {
   const menuItems = [
     { name: "home", path: "/" },
     { name: "about", path: "/about" },
-    { name: "pages", path: "/pages" },
+    { name: "career", path: "/career" },
     { name: "blog", path: "/blog" },
     { name: "contact", path: "/contact" },
     { name: "mehrab", path: "/mehrab" },
