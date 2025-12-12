@@ -11,7 +11,7 @@ import { FaInstagram } from "react-icons/fa";
 
 export default function Contact() {
   return (
-    <section className={`w-full 2xl:w-[1350px] mx-auto mb-[120px] flex items-center flex-wrap gap-5 lg:gap-0 px-5`}>
+    <section className={`w-full xl:w-[1200px] 2xl:w-[1350px] mx-auto mb-[120px] flex items-center flex-wrap gap-5 lg:gap-0 px-5`}>
       <div className={`w-full lg:w-1/2 h-full lg:pr-[15%]`}>
          <h3 className={`font-sora font-semibold text-[40px] text-white capitalize`}>drop a line</h3>
          <p className={`font-sora text-[14px] text-[#a1aac9] leading-[26px] mt-3`}>There are more than 80+ use cases and templates to pick from to meet all of your writing demands. Let’s Communicate with your customers with emotions</p>
