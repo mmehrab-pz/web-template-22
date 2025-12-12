@@ -97,16 +97,16 @@ export default function HomeHeaderContent() {
                 <figure className="absolute -bottom-10 -left-50">
             <StarRotate />
         </figure>
-        <div className="w-[140px] h-[140px] bg-[#ffffff0d] border border-[#ffffff29] backdrop-blur-[10px] rounded-2xl flex flex-col justify-center items-center">
+        <div className="w-[140px] h-[140px] bg-[#ffffff0d] px-2 border border-[#ffffff29] backdrop-blur-[10px] rounded-2xl flex flex-col justify-center items-center">
           <Image src={pack5} alt="img" />
-          <h2 className="text-[18px] text-[white] font-sora font-medium capitalize mt-3 text-center">
+          <h2 className="text-[16px] text-[white] font-sora font-medium capitalize mt-3 text-center">
             generate text to audio
           </h2>
         </div>
         <h2 className="font-sora text-[#426BFF] hidden capitalize font-bold text-[30px] absolute left-[50%] translate-x-[-50%]">
           ai pack
         </h2>
-        <div className="w-[140px] h-[140px] bg-[#ffffff0d] border border-[#ffffff29] backdrop-blur-[10px] rounded-2xl flex flex-col justify-center items-center">
+        <div className="w-[140px] h-[140px] bg-[#ffffff0d] border border-[#ffffff29] px-2 backdrop-blur-[10px] rounded-2xl flex flex-col justify-center items-center">
           <Image src={pack6} alt="img" />
           <h2 className="text-[18px] text-[white] font-sora font-medium capitalize mt-3 text-center">
             speech to text
